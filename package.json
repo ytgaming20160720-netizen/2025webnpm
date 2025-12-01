@@ -4,7 +4,10 @@
   "description": "A simple example using Bootstrap 5 and Lightbox2 managed by npm.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "keywords": [
     "bootstrap",
@@ -14,8 +17,20 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "bootstrap": "^5.3.3",
+    "bootstrap": "^5.3.8",
     "jquery": "^3.7.1",
     "lightbox2": "^2.11.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ytgaming20160720-netizen/2025webnpm.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ytgaming20160720-netizen/2025webnpm/issues"
+  },
+  "homepage": "https://github.com/ytgaming20160720-netizen/2025webnpm#readme",
+  "devDependencies": {
+    "sass": "^1.94.2",
+    "vite": "^7.2.4"
   }
 }
