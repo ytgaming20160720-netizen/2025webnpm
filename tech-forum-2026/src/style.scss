@@ -1,19 +1,55 @@
+// 引入 Bootstrap
 @import "bootstrap/scss/bootstrap";
 
+// 全域變數與重設
+:root {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+// 導覽列模糊效果
+.navbar {
+  backdrop-filter: blur(10px);
+  background-color: rgba(33, 37, 41, 0.85);
+  padding: 1rem 0;
+  transition: all 0.3s;
+}
+
+// 主視覺區
 .hero-section {
   height: 100vh;
-  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+  background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), 
               url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1920&q=80');
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
 }
 
+// 區塊間距
 section {
-  scroll-margin-top: 70px; // 避免導覽列擋住標題
+  padding: 100px 0;
 }
 
+// 講者輪播圖片
 .carousel-item img {
-  width: 150px;
-  height: 150px;
+  width: 160px;
+  height: 160px;
   object-fit: cover;
+  box-shadow: 0 0 30px rgba(13, 110, 253, 0.4);
+}
+
+// 聯絡表單輸入框
+.form-control:focus {
+  border-color: #0d6efd;
+  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.15);
+}
+
+// RWD 調整
+@media (max-width: 768px) {
+  .hero-section h1 {
+    font-size: 2.5rem;
+  }
 }
